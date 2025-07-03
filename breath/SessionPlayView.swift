@@ -19,7 +19,7 @@ struct SessionPlayView: View {
     @State private var elapsedTime: TimeInterval = 0
     @State private var totalTime: TimeInterval = 0
     @State private var balloonOpacity: Double = 1.0
-    @State private var initialScale: Double = 1.0 // Start with small size
+    @State private var initialScale: Double = 0.8 // Start with small size
     
     private let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
@@ -197,13 +197,13 @@ struct SessionPlayView: View {
     private var targetScale: Double {
         switch currentPhase {
         case .inhale:
-            return initialScale == 1.0 ? 1.3 : 1.3 // Animate from small to big
+            return 1.3 // Always animate to big size
         case .holdIn:
             return 1.3 // Big size
         case .exhale:
-            return 1.0 // Small size
+            return 0.8 // Small size
         case .holdOut:
-            return 1.0 // Small size
+            return 0.8 // Small size
         }
     }
     
@@ -266,8 +266,10 @@ struct SessionPlayView: View {
             // Change phase and fade in new balloon
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
                 currentPhase = phases[nextIndex]
-                // After first inhale, set initialScale to 1.3 so subsequent inhales start from big
-                if currentPhase == .holdIn {
+                // Update initialScale based on the current phase
+                if currentPhase == .exhale || currentPhase == .holdOut {
+                    initialScale = 0.8
+                } else {
                     initialScale = 1.3
                 }
                 withAnimation(.easeInOut(duration: 0.4)) {

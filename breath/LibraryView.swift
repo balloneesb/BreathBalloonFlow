@@ -69,20 +69,17 @@ struct LibraryView: View {
                     
                     LazyVStack(spacing: 16) {
                         ForEach(filteredTechniques) { technique in
-                            TechniqueCard(
-                                technique: technique,
-                                onLikeTap: {
-                                    if let index = techniques.firstIndex(where: { $0.id == technique.id }) {
-                                        techniques[index].isLiked.toggle()
+                            NavigationLink(destination: TechniqueDetailView(technique: technique)) {
+                                TechniqueCard(
+                                    technique: technique,
+                                    onLikeTap: {
+                                        if let index = techniques.firstIndex(where: { $0.id == technique.id }) {
+                                            techniques[index].isLiked.toggle()
+                                        }
                                     }
-                                }
-                            )
-                            .overlay(
-                                NavigationLink(destination: TechniqueDetailView(technique: technique)) {
-                                    EmptyView()
-                                }
-                                .opacity(0)
-                            )
+                                )
+                            }
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                     .padding(.horizontal, 20)
@@ -177,7 +174,9 @@ struct TechniqueCard: View {
                             .font(.title3)
                             .foregroundColor(technique.isLiked ? .red : .inAppSecondaryLabel)
                     }
-                    .buttonStyle(PlainButtonStyle())
+                    .onTapGesture {
+                        onLikeTap()
+                    }
                     
                     Text(technique.difficulty.displayName)
                         .font(.caption)
