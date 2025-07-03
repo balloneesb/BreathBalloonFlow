@@ -1,0 +1,194 @@
+[
+  {
+    "id": "4-7-8-breathing",
+    "name": "4-7-8 Breathing (Relaxing Breath)",
+    "description": "A natural tranquilizer for the nervous system. Inhale for 4, hold for 7, exhale for 8. This technique activates the parasympathetic nervous system, reducing stress and promoting sleep.",
+    "tags": ["sleep", "relaxation", "stress-relief", "anxiety", "insomnia", "calm"],
+    "defaultDurations": {
+      "inhale": 4.0,
+      "holdIn": 7.0,
+      "exhale": 8.0,
+      "holdOut": 0.0
+    },
+    "category": "relaxationSleep",
+    "totalDuration": 5,
+    "difficulty": "beginner",
+    "benefits": ["Better sleep", "Reduced anxiety", "Stress relief", "Lower blood pressure"]
+  },
+  {
+    "id": "box-breathing",
+    "name": "Box Breathing (Square Breathing)",
+    "description": "Equal duration for inhale, hold, exhale, and hold again. Creates a 'box' pattern that helps regulate the nervous system and improve focus. Used by Navy SEALs and athletes.",
+    "tags": ["focus", "concentration", "stress-relief", "military", "performance", "calm"],
+    "defaultDurations": {
+      "inhale": 4.0,
+      "holdIn": 4.0,
+      "exhale": 4.0,
+      "holdOut": 4.0
+    },
+    "category": "energyWakefulness",
+    "totalDuration": 3,
+    "difficulty": "beginner",
+    "benefits": ["Improved focus", "Stress reduction", "Better concentration", "Emotional regulation"]
+  },
+  {
+    "id": "wim-hof-breathing",
+    "name": "Wim Hof Method",
+    "description": "Powerful breathing technique combining deep breathing with breath retention. Increases energy, reduces stress, and improves cold tolerance. Popular for cold exposure and performance.",
+    "tags": ["energy", "cold-exposure", "stress-resilience", "immune-system", "performance"],
+    "defaultDurations": {
+      "inhale": 2.0,
+      "holdIn": 0.0,
+      "exhale": 2.0,
+      "holdOut": 15.0
+    },
+    "category": "coldExposureStressResilience",
+    "totalDuration": 10,
+    "difficulty": "intermediate",
+    "benefits": ["Increased energy", "Cold tolerance", "Stress resilience", "Immune boost"]
+  },
+  {
+    "id": "alternate-nostril-breathing",
+    "name": "Alternate Nostril Breathing (Nadi Shodhana)",
+    "description": "Balances the left and right hemispheres of the brain, calms the mind, and reduces anxiety. Traditional yoga technique for mental balance.",
+    "tags": ["balance", "calm", "yoga", "meditation", "anxiety", "focus"],
+    "defaultDurations": {
+      "inhale": 4.0,
+      "holdIn": 0.0,
+      "exhale": 4.0,
+      "holdOut": 0.0
+    },
+    "category": "emotionalRegulationNervousSystem",
+    "totalDuration": 5,
+    "difficulty": "beginner",
+    "benefits": ["Mental balance", "Reduced anxiety", "Better focus", "Emotional stability"]
+  },
+  {
+    "id": "kapalabhati-breathing",
+    "name": "Kapalabhati (Skull Shining Breath)",
+    "description": "Energizing breathing technique with forceful exhalations. Clears the mind and increases energy levels naturally. Great morning alternative to coffee.",
+    "tags": ["energy", "wakefulness", "mental-clarity", "yoga", "morning"],
+    "defaultDurations": {
+      "inhale": 1.0,
+      "holdIn": 0.0,
+      "exhale": 1.0,
+      "holdOut": 0.0
+    },
+    "category": "energyWakefulness",
+    "totalDuration": 3,
+    "difficulty": "intermediate",
+    "benefits": ["Increased energy", "Mental clarity", "Natural stimulant", "Better focus"]
+  },
+  {
+    "id": "coherent-breathing",
+    "name": "Coherent Breathing",
+    "description": "Slow, rhythmic breathing at 5-6 breaths per minute. Optimizes heart rate variability and promotes deep relaxation. Excellent for stress relief.",
+    "tags": ["relaxation", "heart-rate", "stress-relief", "calm", "meditation"],
+    "defaultDurations": {
+      "inhale": 5.0,
+      "holdIn": 0.0,
+      "exhale": 5.0,
+      "holdOut": 0.0
+    },
+    "category": "relaxationSleep",
+    "totalDuration": 5,
+    "difficulty": "beginner",
+    "benefits": ["Stress reduction", "Better sleep", "Heart rate optimization", "Emotional balance"]
+  },
+  {
+    "id": "diaphragmatic-breathing",
+    "name": "Diaphragmatic Breathing (Belly Breathing)",
+    "description": "Deep breathing using the diaphragm. Reduces stress, improves oxygen intake, and promotes relaxation. Foundation for all breathing techniques.",
+    "tags": ["relaxation", "stress-relief", "oxygenation", "calm", "meditation"],
+    "defaultDurations": {
+      "inhale": 4.0,
+      "holdIn": 0.0,
+      "exhale": 6.0,
+      "holdOut": 0.0
+    },
+    "category": "relaxationSleep",
+    "totalDuration": 5,
+    "difficulty": "beginner",
+    "benefits": ["Stress reduction", "Better oxygenation", "Relaxation", "Improved breathing"]
+  },
+  {
+    "id": "morning-energy-breath",
+    "name": "Morning Energy Breath",
+    "description": "Quick energizing sequence combining deep inhales with short holds. Natural alternative to coffee for morning energy and mental alertness.",
+    "tags": ["energy", "morning", "wakefulness", "coffee-alternative", "vitality"],
+    "defaultDurations": {
+      "inhale": 3.0,
+      "holdIn": 2.0,
+      "exhale": 2.0,
+      "holdOut": 1.0
+    },
+    "category": "energyWakefulness",
+    "totalDuration": 2,
+    "difficulty": "beginner",
+    "benefits": ["Morning energy", "Natural stimulant", "Mental alertness", "Vitality boost"]
+  },
+  {
+    "id": "cold-shower-breath",
+    "name": "Cold Shower Breathing",
+    "description": "Controlled breathing technique to prepare for and endure cold exposure. Builds mental resilience and cold tolerance for cold showers and ice baths.",
+    "tags": ["cold-exposure", "resilience", "mental-strength", "cold-shower", "ice-bath"],
+    "defaultDurations": {
+      "inhale": 3.0,
+      "holdIn": 5.0,
+      "exhale": 3.0,
+      "holdOut": 2.0
+    },
+    "category": "coldExposureStressResilience",
+    "totalDuration": 4,
+    "difficulty": "intermediate",
+    "benefits": ["Cold tolerance", "Mental resilience", "Stress adaptation", "Body awareness"]
+  },
+  {
+    "id": "focus-breath",
+    "name": "Focus Breathing",
+    "description": "Concentration-enhancing breath pattern that improves mental clarity and attention span. Perfect for work, study, or any task requiring focus.",
+    "tags": ["focus", "concentration", "study", "work", "mental-clarity"],
+    "defaultDurations": {
+      "inhale": 4.0,
+      "holdIn": 4.0,
+      "exhale": 4.0,
+      "holdOut": 2.0
+    },
+    "category": "energyWakefulness",
+    "totalDuration": 3,
+    "difficulty": "beginner",
+    "benefits": ["Better concentration", "Mental clarity", "Improved focus", "Work performance"]
+  },
+  {
+    "id": "anxiety-relief-breath",
+    "name": "Anxiety Relief Breathing",
+    "description": "Gentle breathing pattern specifically designed to reduce anxiety and panic symptoms. Calms the nervous system and promotes emotional balance.",
+    "tags": ["anxiety", "panic", "calm", "stress-relief", "emotional-regulation"],
+    "defaultDurations": {
+      "inhale": 4.0,
+      "holdIn": 0.0,
+      "exhale": 6.0,
+      "holdOut": 0.0
+    },
+    "category": "emotionalRegulationNervousSystem",
+    "totalDuration": 5,
+    "difficulty": "beginner",
+    "benefits": ["Anxiety reduction", "Panic relief", "Emotional calmness", "Stress relief"]
+  },
+  {
+    "id": "pre-sleep-breath",
+    "name": "Pre-Sleep Breathing",
+    "description": "Slow, deep breathing pattern designed to activate the parasympathetic nervous system and prepare for sleep. Perfect for bedtime routine.",
+    "tags": ["sleep", "insomnia", "relaxation", "bedtime", "calm"],
+    "defaultDurations": {
+      "inhale": 4.0,
+      "holdIn": 0.0,
+      "exhale": 8.0,
+      "holdOut": 0.0
+    },
+    "category": "relaxationSleep",
+    "totalDuration": 5,
+    "difficulty": "beginner",
+    "benefits": ["Better sleep", "Insomnia relief", "Deep relaxation", "Stress reduction"]
+  }
+] 
