@@ -11,21 +11,14 @@ struct OnboardingView: View {
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
     
     var body: some View {
-        ZStack {
-            // Background image
-            Image("bg")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-            
-            // Content
-            VStack {
-                Spacer()
-                Spacer()
-
+        
+        ScrollView {
+            VStack(spacing: 24) {
                 // Title
                 Text("Welcome to BreathBalloonFlow")
                     .font(.system(size: 36, weight: .bold))
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.5)
                     .foregroundColor(.indigo)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
@@ -34,8 +27,8 @@ struct OnboardingView: View {
                 Image("gr")
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 300)
-//                    .padding(.horizontal, 16)
+                    .frame(height: 280)
+                //                    .padding(.horizontal, 16)
                     .padding(.bottom, 16)
                 
                 // Description
@@ -43,7 +36,7 @@ struct OnboardingView: View {
                     .font(.title3)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 32)
+                    .padding(.horizontal, 24)
                 
                 Spacer()
                 
@@ -67,11 +60,17 @@ struct OnboardingView: View {
                 Spacer()
                 Spacer()
             }
-            .padding(.horizontal, 32)
+            .padding(32)
         }
+        .background(
+            Image("bg")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+        )
     }
 }
 
 #Preview {
     OnboardingView()
-} 
+}

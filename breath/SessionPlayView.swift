@@ -33,7 +33,7 @@ struct SessionPlayView: View {
             )
             .ignoresSafeArea()
             
-            VStack(spacing: 40) {
+            VStack(spacing: 32) {
                 // Header
                 VStack(spacing: 8) {
                     Text("\(Int(elapsedTime / 60)):\(String(format: "%02d", Int(elapsedTime.truncatingRemainder(dividingBy: 60)))) / \(Int(totalTime / 60)):\(String(format: "%02d", Int(totalTime.truncatingRemainder(dividingBy: 60))))")
@@ -46,12 +46,12 @@ struct SessionPlayView: View {
                     // Progress ring
                     Circle()
                         .stroke(Color.inAppLabel.opacity(0.2), lineWidth: 8)
-                        .frame(width: 280, height: 280)
+                        .frame(width: 260, height: 260)
                     
                     Circle()
                         .trim(from: 0, to: sessionProgress)
                         .stroke(Color.inAppBlue, style: StrokeStyle(lineWidth: 8, lineCap: .round))
-                        .frame(width: 280, height: 280)
+                        .frame(width: 260, height: 260)
                         .rotationEffect(.degrees(-90))
                         .animation(.linear(duration: 0.1), value: sessionProgress)
                     
@@ -59,7 +59,7 @@ struct SessionPlayView: View {
                     Image(balloonImageName(for: currentPhase))
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 200, height: 200)
+                        .frame(width: 190, height: 190)
                         .scaleEffect(targetScale)
                         .opacity(balloonOpacity)
                         .rotationEffect(.degrees(phaseProgress * 5))
@@ -79,7 +79,7 @@ struct SessionPlayView: View {
                 }
                 
                 // Phase progress with balloon indicators
-                VStack(spacing: 12) {
+                VStack(spacing: 8) {
                     Text("Current Phase")
                         .font(.subheadline)
                         .foregroundColor(.inAppSecondaryLabel)
