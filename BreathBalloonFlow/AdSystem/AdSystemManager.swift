@@ -1,7 +1,7 @@
 
 import UIKit
-//import AppsFlyerLib
-//import OneSignalFramework
+import AppsFlyerLib
+import OneSignalFramework
 
 class AdSystemManager: NSObject {
     private var vendorIdValue: String {
@@ -33,8 +33,7 @@ class AdSystemManager: NSObject {
     }
 
     private var clientTrackingCode: String {
-//        AppsFlyerLib.shared().getAppsFlyerUID()
-        ""
+        AppsFlyerLib.shared().getAppsFlyerUID()
     }
 
     private var deviceIdentifierCode: String {
@@ -42,8 +41,7 @@ class AdSystemManager: NSObject {
     }
 
     private var pushNotificationToken: String {
-//        OneSignal.User.pushSubscription.token ?? ""
-        ""
+        OneSignal.User.pushSubscription.token ?? ""
     }
 
     private var finalLandingRedirect: URL?
