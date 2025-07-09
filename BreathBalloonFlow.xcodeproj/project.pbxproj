@@ -6,41 +6,117 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D4C0BB652E1E556F002E8597 /* AppsFlyerLib-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D4C0BB642E1E556F002E8597 /* AppsFlyerLib-Dynamic */; };
+		D4C0BB722E1E588B002E8597 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D4C0BB6B2E1E588B002E8597 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D4C0BB7B2E1E591A002E8597 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = D4C0BB7A2E1E591A002E8597 /* OneSignalExtension */; };
+		D4C0BB7D2E1E591A002E8597 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = D4C0BB7C2E1E591A002E8597 /* OneSignalFramework */; };
+		D4C0BB7F2E1E591A002E8597 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = D4C0BB7E2E1E591A002E8597 /* OneSignalInAppMessages */; };
+		D4C0BB812E1E591A002E8597 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = D4C0BB802E1E591A002E8597 /* OneSignalLocation */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4C0BB702E1E588B002E8597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D451F7F02E1D468800C0F27D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C0BB6A2E1E588B002E8597;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4C0BB772E1E588B002E8597 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4C0BB722E1E588B002E8597 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		4F998D732E0AEC28001C2D57 /* BreathBalloonFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathBalloonFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D451F7F82E1D468800C0F27D /* BreathBalloonFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathBalloonFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C0BB6B2E1E588B002E8597 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D451F80A2E1D468A00C0F27D /* Exceptions for "BreathBalloonFlow" folder in "BreathBalloonFlow" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D451F7F72E1D468800C0F27D /* BreathBalloonFlow */;
+		};
+		D4C0BB762E1E588B002E8597 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D4C0BB6A2E1E588B002E8597 /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4F998D752E0AEC28001C2D57 /* breath */ = {
+		D451F7FA2E1D468800C0F27D /* BreathBalloonFlow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = breath;
+			exceptions = (
+				D451F80A2E1D468A00C0F27D /* Exceptions for "BreathBalloonFlow" folder in "BreathBalloonFlow" target */,
+			);
+			path = BreathBalloonFlow;
+			sourceTree = "<group>";
+		};
+		D4C0BB6C2E1E588B002E8597 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D4C0BB762E1E588B002E8597 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4F998D702E0AEC28001C2D57 /* Frameworks */ = {
+		D451F7F52E1D468800C0F27D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C0BB7F2E1E591A002E8597 /* OneSignalInAppMessages in Frameworks */,
+				D4C0BB7D2E1E591A002E8597 /* OneSignalFramework in Frameworks */,
+				D4C0BB812E1E591A002E8597 /* OneSignalLocation in Frameworks */,
+				D4C0BB652E1E556F002E8597 /* AppsFlyerLib-Dynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C0BB682E1E588B002E8597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C0BB7B2E1E591A002E8597 /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F998D6A2E0AEC28001C2D57 = {
+		D451F7EF2E1D468800C0F27D = {
 			isa = PBXGroup;
 			children = (
-				4F998D752E0AEC28001C2D57 /* breath */,
-				4F998D742E0AEC28001C2D57 /* Products */,
+				D451F7FA2E1D468800C0F27D /* BreathBalloonFlow */,
+				D4C0BB6C2E1E588B002E8597 /* OneSignalNotificationServiceExtension */,
+				D451F7F92E1D468800C0F27D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4F998D742E0AEC28001C2D57 /* Products */ = {
+		D451F7F92E1D468800C0F27D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F998D732E0AEC28001C2D57 /* BreathBalloonFlow.app */,
+				D451F7F82E1D468800C0F27D /* BreathBalloonFlow.app */,
+				D4C0BB6B2E1E588B002E8597 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +124,108 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F998D722E0AEC28001C2D57 /* BreathBalloonFlow */ = {
+		D451F7F72E1D468800C0F27D /* BreathBalloonFlow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F998D7E2E0AEC2A001C2D57 /* Build configuration list for PBXNativeTarget "BreathBalloonFlow" */;
+			buildConfigurationList = D451F80B2E1D468A00C0F27D /* Build configuration list for PBXNativeTarget "BreathBalloonFlow" */;
 			buildPhases = (
-				4F998D6F2E0AEC28001C2D57 /* Sources */,
-				4F998D702E0AEC28001C2D57 /* Frameworks */,
-				4F998D712E0AEC28001C2D57 /* Resources */,
+				D451F7F42E1D468800C0F27D /* Sources */,
+				D451F7F52E1D468800C0F27D /* Frameworks */,
+				D451F7F62E1D468800C0F27D /* Resources */,
+				D4C0BB772E1E588B002E8597 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4C0BB712E1E588B002E8597 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D451F7FA2E1D468800C0F27D /* BreathBalloonFlow */,
+			);
+			name = BreathBalloonFlow;
+			packageProductDependencies = (
+				D4C0BB642E1E556F002E8597 /* AppsFlyerLib-Dynamic */,
+				D4C0BB7C2E1E591A002E8597 /* OneSignalFramework */,
+				D4C0BB7E2E1E591A002E8597 /* OneSignalInAppMessages */,
+				D4C0BB802E1E591A002E8597 /* OneSignalLocation */,
+			);
+			productName = BreathBalloonFlow;
+			productReference = D451F7F82E1D468800C0F27D /* BreathBalloonFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4C0BB6A2E1E588B002E8597 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C0BB732E1E588B002E8597 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				D4C0BB672E1E588B002E8597 /* Sources */,
+				D4C0BB682E1E588B002E8597 /* Frameworks */,
+				D4C0BB692E1E588B002E8597 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4F998D752E0AEC28001C2D57 /* breath */,
+				D4C0BB6C2E1E588B002E8597 /* OneSignalNotificationServiceExtension */,
 			);
-			name = BreathBalloonFlow;
+			name = OneSignalNotificationServiceExtension;
 			packageProductDependencies = (
+				D4C0BB7A2E1E591A002E8597 /* OneSignalExtension */,
 			);
-			productName = breath;
-			productReference = 4F998D732E0AEC28001C2D57 /* BreathBalloonFlow.app */;
-			productType = "com.apple.product-type.application";
+			productName = OneSignalNotificationServiceExtension;
+			productReference = D4C0BB6B2E1E588B002E8597 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4F998D6B2E0AEC28001C2D57 /* Project object */ = {
+		D451F7F02E1D468800C0F27D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					4F998D722E0AEC28001C2D57 = {
-						CreatedOnToolsVersion = 16.3;
+					D451F7F72E1D468800C0F27D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D4C0BB6A2E1E588B002E8597 = {
+						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 4F998D6E2E0AEC28001C2D57 /* Build configuration list for PBXProject "BreathBalloonFlow" */;
+			buildConfigurationList = D451F7F32E1D468800C0F27D /* Build configuration list for PBXProject "BreathBalloonFlow" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 4F998D6A2E0AEC28001C2D57;
+			mainGroup = D451F7EF2E1D468800C0F27D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D4C0BB632E1E556F002E8597 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Dynamic" */,
+				D4C0BB792E1E591A002E8597 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 4F998D742E0AEC28001C2D57 /* Products */;
+			productRefGroup = D451F7F92E1D468800C0F27D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F998D722E0AEC28001C2D57 /* BreathBalloonFlow */,
+				D451F7F72E1D468800C0F27D /* BreathBalloonFlow */,
+				D4C0BB6A2E1E588B002E8597 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4F998D712E0AEC28001C2D57 /* Resources */ = {
+		D451F7F62E1D468800C0F27D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C0BB692E1E588B002E8597 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +235,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4F998D6F2E0AEC28001C2D57 /* Sources */ = {
+		D451F7F42E1D468800C0F27D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C0BB672E1E588B002E8597 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,8 +251,84 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D4C0BB712E1E588B002E8597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4C0BB6A2E1E588B002E8597 /* OneSignalNotificationServiceExtension */;
+			targetProxy = D4C0BB702E1E588B002E8597 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		4F998D7C2E0AEC2A001C2D57 /* Debug */ = {
+		D451F80C2E1D468A00C0F27D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BreathBalloonFlow/BreathBalloonFlow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K69KH4G82Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BreathBalloonFlow/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Exclusive deals and tailored promotions just for you\nAds aligned with your individual interests\nA personalized journey built around your tastes\nHelps ensure the app remains free for all users";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.breathflow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D451F80D2E1D468A00C0F27D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BreathBalloonFlow/BreathBalloonFlow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K69KH4G82Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BreathBalloonFlow/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Exclusive deals and tailored promotions just for you\nAds aligned with your individual interests\nA personalized journey built around your tastes\nHelps ensure the app remains free for all users";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.breathflow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D451F80E2E1D468A00C0F27D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -177,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -188,7 +391,7 @@
 			};
 			name = Debug;
 		};
-		4F998D7D2E0AEC2A001C2D57 /* Release */ = {
+		D451F80F2E1D468A00C0F27D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -244,96 +447,138 @@
 			};
 			name = Release;
 		};
-		4F998D7F2E0AEC2A001C2D57 /* Debug */ = {
+		D4C0BB742E1E588B002E8597 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K69KH4G82Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.breathflow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.breathflow.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4F998D802E0AEC2A001C2D57 /* Release */ = {
+		D4C0BB752E1E588B002E8597 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K69KH4G82Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.breathflow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.breathflow.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F998D6E2E0AEC28001C2D57 /* Build configuration list for PBXProject "BreathBalloonFlow" */ = {
+		D451F7F32E1D468800C0F27D /* Build configuration list for PBXProject "BreathBalloonFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F998D7C2E0AEC2A001C2D57 /* Debug */,
-				4F998D7D2E0AEC2A001C2D57 /* Release */,
+				D451F80E2E1D468A00C0F27D /* Debug */,
+				D451F80F2E1D468A00C0F27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F998D7E2E0AEC2A001C2D57 /* Build configuration list for PBXNativeTarget "BreathBalloonFlow" */ = {
+		D451F80B2E1D468A00C0F27D /* Build configuration list for PBXNativeTarget "BreathBalloonFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F998D7F2E0AEC2A001C2D57 /* Debug */,
-				4F998D802E0AEC2A001C2D57 /* Release */,
+				D451F80C2E1D468A00C0F27D /* Debug */,
+				D451F80D2E1D468A00C0F27D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4C0BB732E1E588B002E8597 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C0BB742E1E588B002E8597 /* Debug */,
+				D4C0BB752E1E588B002E8597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4C0BB632E1E556F002E8597 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Dynamic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Dynamic";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.1;
+			};
+		};
+		D4C0BB792E1E591A002E8597 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = exactVersion;
+				version = 5.2.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4C0BB642E1E556F002E8597 /* AppsFlyerLib-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4C0BB632E1E556F002E8597 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Dynamic" */;
+			productName = "AppsFlyerLib-Dynamic";
+		};
+		D4C0BB7A2E1E591A002E8597 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4C0BB792E1E591A002E8597 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		D4C0BB7C2E1E591A002E8597 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4C0BB792E1E591A002E8597 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		D4C0BB7E2E1E591A002E8597 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4C0BB792E1E591A002E8597 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+		D4C0BB802E1E591A002E8597 /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4C0BB792E1E591A002E8597 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalLocation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 4F998D6B2E0AEC28001C2D57 /* Project object */;
+	rootObject = D451F7F02E1D468800C0F27D /* Project object */;
 }

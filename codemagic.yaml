@@ -18,11 +18,12 @@ workflows:
         scripts:
         - name: Set up provisioning profiles settings on Xcode project
           script: xcode-project use-profiles
-#        - name: Increment build number
-#          script: |
-#            cd $CM_BUILD_DIR
-#            LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
-#            agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
+
+        - name: Resolve Swift packages
+          script: |
+            xcodebuild -resolvePackageDependencies \
+            -project "$CM_BUILD_DIR/$XCODE_PROJECT"
+
         - name: Build ipa for distribution
           script: |
             xcode-project build-ipa \
