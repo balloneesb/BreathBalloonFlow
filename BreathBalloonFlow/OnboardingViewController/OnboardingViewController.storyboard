@@ -70,22 +70,20 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Qg9-Um-9Hu">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gr" translatesAutoresizingMaskIntoConstraints="NO" id="GRm-3Q-M7N">
-                                        <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="GRm-3Q-M7N" secondAttribute="height" id="Iwk-zS-iUU"/>
-                                            <constraint firstAttribute="height" constant="300" id="hlm-kc-jhg"/>
-                                        </constraints>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="GRm-3Q-M7N">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GRm-3Q-M7N" secondAttribute="trailing" id="1ju-o8-8BE"/>
                                     <constraint firstAttribute="bottom" secondItem="Qg9-Um-9Hu" secondAttribute="bottom" id="CO6-TE-iOu"/>
+                                    <constraint firstItem="GRm-3Q-M7N" firstAttribute="top" secondItem="e8y-NU-cCi" secondAttribute="top" id="IDE-SR-TUH"/>
                                     <constraint firstAttribute="trailing" secondItem="Qg9-Um-9Hu" secondAttribute="trailing" id="LiA-Gw-Eat"/>
                                     <constraint firstItem="Qg9-Um-9Hu" firstAttribute="top" secondItem="e8y-NU-cCi" secondAttribute="top" id="Vyk-s2-If6"/>
                                     <constraint firstItem="Qg9-Um-9Hu" firstAttribute="leading" secondItem="e8y-NU-cCi" secondAttribute="leading" id="Xa7-We-NOd"/>
-                                    <constraint firstItem="GRm-3Q-M7N" firstAttribute="centerY" secondItem="e8y-NU-cCi" secondAttribute="centerY" id="YHp-DV-hxc"/>
-                                    <constraint firstItem="GRm-3Q-M7N" firstAttribute="centerX" secondItem="e8y-NU-cCi" secondAttribute="centerX" id="qa1-M0-HIC"/>
+                                    <constraint firstItem="GRm-3Q-M7N" firstAttribute="leading" secondItem="e8y-NU-cCi" secondAttribute="leading" id="kNI-DW-fSn"/>
+                                    <constraint firstAttribute="bottom" secondItem="GRm-3Q-M7N" secondAttribute="bottom" id="xxv-cS-pAN"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -114,10 +112,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="5160" height="11184"/>
+        <image name="bg" width="400" height="867"/>
         <image name="gr" width="4812" height="3990"/>
+        <image name="s" width="800" height="800"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

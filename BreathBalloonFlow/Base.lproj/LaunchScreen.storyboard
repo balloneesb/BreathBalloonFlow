@@ -22,20 +22,18 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="hs2-Jf-zh6">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gr" translatesAutoresizingMaskIntoConstraints="NO" id="rbl-AV-cyc">
-                                        <rect key="frame" x="46.666666666666515" y="276" width="300" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="7Dc-vi-GaZ"/>
-                                            <constraint firstAttribute="width" secondItem="rbl-AV-cyc" secondAttribute="height" id="MUE-PK-RHJ"/>
-                                        </constraints>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="rbl-AV-cyc">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="rbl-AV-cyc" firstAttribute="centerX" secondItem="UaI-8Y-Dpb" secondAttribute="centerX" id="Znu-Ug-A1X"/>
+                                    <constraint firstAttribute="trailing" secondItem="rbl-AV-cyc" secondAttribute="trailing" id="2ja-YD-QQo"/>
+                                    <constraint firstItem="rbl-AV-cyc" firstAttribute="leading" secondItem="UaI-8Y-Dpb" secondAttribute="leading" id="Aku-Jh-4xy"/>
+                                    <constraint firstAttribute="bottom" secondItem="rbl-AV-cyc" secondAttribute="bottom" id="CN1-uZ-2bp"/>
                                     <constraint firstItem="hs2-Jf-zh6" firstAttribute="leading" secondItem="UaI-8Y-Dpb" secondAttribute="leading" id="dFm-nS-T1H"/>
-                                    <constraint firstItem="rbl-AV-cyc" firstAttribute="centerY" secondItem="UaI-8Y-Dpb" secondAttribute="centerY" id="fbX-1m-UIS"/>
                                     <constraint firstAttribute="trailing" secondItem="hs2-Jf-zh6" secondAttribute="trailing" id="jcu-sp-8nz"/>
+                                    <constraint firstItem="rbl-AV-cyc" firstAttribute="top" secondItem="UaI-8Y-Dpb" secondAttribute="top" id="wVg-kC-GW2"/>
                                     <constraint firstItem="hs2-Jf-zh6" firstAttribute="top" secondItem="UaI-8Y-Dpb" secondAttribute="top" id="x3t-Js-J90"/>
                                     <constraint firstAttribute="bottom" secondItem="hs2-Jf-zh6" secondAttribute="bottom" id="yXb-gB-Yto"/>
                                 </constraints>
@@ -53,12 +51,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="5160" height="11184"/>
-        <image name="gr" width="4812" height="3990"/>
+        <image name="bg" width="400" height="867"/>
+        <image name="s" width="800" height="800"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
